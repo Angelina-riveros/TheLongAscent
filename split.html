@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .split-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            z-index: 0;
+        }
+        .left-half {
+            width: 50vw;
+            height: 100vh;
+            background: radial-gradient(circle at 50% 80%, #ff9800 0%, #ff5722 40%, #181818 100%);
+        }
+        .right-half {
+            width: 50vw;
+            height: 100vh;
+            background: linear-gradient(to top, #ffe082 0%, #90caf9 100%);
+        }
+        .split-text {
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+            color: #181818;
+            font-family: 'Grenze Gotisch', serif;
+            font-size: 2em;
+            text-align: center;
+            background: rgba(255,255,255,0.7);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 0 32px 8px #ffe082;
+            letter-spacing: 1px;
+            max-width: 90vw;
+        }
+        .split-btn {
+            display: inline-block;
+            margin: 24px 16px 0 16px;
+            padding: 16px 40px;
+            font-size: 1em;
+            font-family: 'Grenze Gotisch', serif;
+            border-radius: 8px;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+        .left-btn {
+            color: #fff8e1;
+            background: rgba(30, 20, 10, 0.7);
+            border: 2px solid #ff9800;
+            box-shadow: 0 0 16px 2px #ff9800, 0 0 8px 2px #ff5722;
+        }
+        .left-btn:hover {
+            background: #ff9800;
+            color: #181818;
+            box-shadow: 0 0 32px 8px #ff9800, 0 0 16px 4px #ff5722;
+        }
+        .right-btn {
+            color: #181818;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #ffe082;
+            box-shadow: 0 0 16px 2px #ffe082;
+        }
+        .right-btn:hover {
+            background: #ffe082;
+            color: #fffde7;
+            box-shadow: 0 0 32px 8px #ffe082;
+        }
+    </style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="split-bg">
+        <div class="left-half"></div>
+        <div class="right-half"></div>
+    </div>
+    <div class="split-text">
+        The habit still calls to you. Friends who remain inside tell you it’s easier there. Do you return… or do you stay in the light?
+        <br><br>
+        <a href="dark2.html" class="split-btn left-btn">Return to the dark</a>
+        <a href="sun2.html" class="split-btn right-btn">Stay in the light</a>
+    </div>
+</body>
+</html>

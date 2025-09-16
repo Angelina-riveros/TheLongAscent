@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Free</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #181818 0%, #fff8e1 100%);
+        }
+        .breakfree-text {
+            color: #181818;
+            font-family: 'Grenze Gotisch', serif;
+            font-size: 2em;
+            text-align: center;
+            background: rgba(255, 248, 225, 0.7);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 0 32px 8px #fff8e1;
+            letter-spacing: 1px;
+            max-width: 90vw;
+        }
+        .truth-btn {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 16px 40px;
+            font-size: 1em;
+            font-family: 'Grenze Gotisch', serif;
+            color: #fff8e1;
+            background: rgba(30, 20, 10, 0.7);
+            border: 2px solid #181818;
+            border-radius: 8px;
+            box-shadow: 0 0 16px 2px #fff8e1;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .truth-btn:hover {
+            background: #fff8e1;
+            color: #181818;
+            box-shadow: 0 0 32px 8px #fff8e1;
+        }
+    </style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="breakfree-text">
+        “You try to step away. It hurts. Your mind tells you to go back. But each step forward pulls you closer to freedom.”
+        <br><br>
+        <button id="truth-btn" class="truth-btn">Truth</button>
+    </div>
+    <script>
+    let truthClicks = 0;
+    document.getElementById('truth-btn').addEventListener('click', function() {
+        truthClicks++;
+        if (truthClicks < 3) {
+            this.textContent = `Truth (${truthClicks})`;
+        } else {
+            window.location.href = 'truth.html';
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to top, #ffe082 0%, #90caf9 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .sun {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 120px;
+            background: radial-gradient(circle at 50% 60%, #fffde7 0%, #ffe082 60%, #ffb300 100%);
+            border-radius: 50% 50% 0 0;
+            box-shadow: 0 0 80px 40px #ffe082;
+        }
+        .truth-text {
+            position: relative;
+            z-index: 2;
+            color: #181818;
+            font-family: 'Grenze Gotisch', serif;
+            font-size: 2em;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 0 32px 8px #ffe082;
+            letter-spacing: 1px;
+            max-width: 90vw;
+        }
+        .choose-btn {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 16px 40px;
+            font-size: 1em;
+            font-family: 'Grenze Gotisch', serif;
+            color: #181818;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #ffe082;
+            border-radius: 8px;
+            box-shadow: 0 0 16px 2px #ffe082;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+        .choose-btn:hover {
+            background: #ffe082;
+            color: #fffde7;
+            box-shadow: 0 0 32px 8px #ffe082;
+        }
+    </style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="truth-text">
+        The sun reveals the truth: freedom was always possible.
+        <br><br>
+        <a href="split.html" class="choose-btn">Choose</a>
+    </div>
+</body>
+</html>

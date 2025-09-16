@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background: #181818;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fire-glow {
+            width: 100vw;
+            height: 60vh;
+            background: radial-gradient(circle at 50% 80%, #ff9800 0%, #ff5722 40%, #181818 100%);
+            box-shadow: 0 0 60px 20px #ff9800, 0 0 120px 40px #ff5722;
+            border-radius: 20px;
+        }
+    </style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="fire-glow"></div>
+    <div class="center-container">
+        <div class="welcome-text">Welcome</div>
+        <a href="index.html" class="return-btn">Return to Beginning</a>
+    </div>
+    <style>
+        .center-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            z-index: 2;
+        }
+        .welcome-text {
+            margin-bottom: 0;
+            color: #fff8e1;
+            font-family: 'Grenze Gotisch', serif;
+            font-size: 2.5em;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .return-btn {
+            display: block;
+            padding: 16px 40px;
+            font-size: 1em;
+            font-family: 'Grenze Gotisch', serif;
+            color: #fff8e1;
+            background: rgba(30, 20, 10, 0.7);
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+            box-shadow: 0 0 16px 2px #ff9800, 0 0 8px 2px #ff5722;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+        .return-btn:hover {
+            background: #ff9800;
+            color: #181818;
+            box-shadow: 0 0 32px 8px #ff9800, 0 0 16px 4px #ff5722;
+        }
+    </style>
+</body>
+</html>
